@@ -1,0 +1,114 @@
+#body{
+    margin: auto;
+}
+#logo{
+    margin-left:10px;
+}
+#logor{
+  margin-left:600px;
+  margin-bottom:50px;
+}
+#contact{
+    margin-left: 1150px;
+    margin-top:-170px;
+}
+#linetop{
+    width:800px;
+    height: 5px;
+    background-color:silver;
+    margin-left :275px;
+    margin-top:200px;
+}
+#title{
+    color: pink;
+    margin-left:590px;
+    font-size: 30px;
+}
+.line{
+    width:800px;
+    height: 5px;
+    background-color:silver;
+    margin-left :275px;
+}
+.project1{
+    margin-left: 100px;
+    margin-top:;
+}
+.titles{
+    color: pink;
+    font-size:20px;
+}
+#p1t{
+    margin-left: 800px;
+    margin-top: -550px;
+}
+.languages{
+    color: pink;
+    font-size:18px;
+}
+#p1l{
+    margin-left: 830px;
+    margin-top: 0px;
+}
+#p1p{
+    margin-left: 600px;
+    margin-right: 100px;
+    margin-top: 00px;
+}
+#par1{
+    text-align: center;
+    color:white;
+    font-size:20px;
+}
+#sep1{
+    margin-top:250px;
+}
+#p2t{
+    margin-left: 800px;
+    margin-top: 100px;
+}
+#p2l{
+    margin-left: 810px;
+    margin-top: 0px;
+}
+#p2pic{
+    margin-top:-90px;
+    margin-left:150px;
+}
+#p2p{
+    margin-left: 550px;
+    margin-right: 100px;
+    margin-top: -220px;
+    margin-bottom: 100px;
+}
+#par2{
+    text-align: center;
+    color:white;
+    font-size:20px;
+}
+#p3t{
+    margin-left: 850px;
+    margin-top: 100px;
+}
+#p3l{
+    margin-left: 860px;
+    margin-top: 0px;
+}
+#p3pic{
+    margin-top:-90px;
+    margin-left:180px;
+}
+#p3p{
+    margin-left: 550px;
+    margin-right: 100px;
+    margin-top: -420px;
+    margin-bottom: 100px;
+}
+#par3{
+    text-align: center;
+    color:white;
+    font-size:20px;
+}
+#sep3{
+    margin-top:200px;
+}

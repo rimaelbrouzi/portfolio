@@ -1,0 +1,29 @@
+#body{
+}
+#logo{
+    margin-left:10px;
+}
+#logor{
+    margin-left:540px;
+    margin-bottom:50px;
+  }
+#contact{
+    margin-left:1000px;
+    margin-top:-150px;
+}
+#p1{
+    width:600px;
+    height:300px;
+    margin-left:450px;
+    margin-top:-250px;
+    color:whitesmoke;
+    text-align: center;
+}
+#p2{
+    width:600px;
+    height:300px;
+    margin-left:120px;
+    margin-top:120px;
+    color:whitesmoke;
+    text-align: center;
+}

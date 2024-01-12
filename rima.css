@@ -1,0 +1,63 @@
+#body{
+
+}
+#logo{
+    margin-left:10px;
+}
+#contact{
+    margin-left:930px;
+    margin-top:-30px;
+}
+#picture{
+   margin-top:0px; 
+   margin-left:800px;
+}
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: beige;
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .styled:hover {
+    background-color:white;
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+#firsts{
+    width:550px;
+    height:60px;
+    margin-top:50px;
+    margin-left:85px;
+}
+#seconds{
+    width:550px;
+    height:60px;
+    margin-left:85px;
+    margin-top:10px;
+}
+#thirds{
+    width:550px;
+    height:60px;
+    margin-left:85px;
+    margin-top:10px;
+}
