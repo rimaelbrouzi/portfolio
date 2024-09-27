@@ -1,0 +1,209 @@
+/* General reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-image: url('img/pic.jpg');
+  background-size: cover;
+  background-position: center;
+  color: gray;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#logo .icon, #logor .logo {
+  width: 48px;
+  height: 40px;
+}
+
+#logor .logo {
+  width: 140px;
+  height: 90px;
+}
+
+#contact a {
+  color: #0077b5;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Main content styling */
+main {
+  padding: 20px;
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #fff;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #fff;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #fff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .timeline::after {
+      left: 31px;
+  }
+
+  .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+  }
+
+  .container::before {
+      left: 60px;
+      border: medium solid #fff;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #fff transparent transparent;
+  }
+
+  .left::after, .right::after {
+      left: 15px;
+  }
+
+  .right {
+      left: 0%;
+  }
+}
+
+/* Section styling */
+.academic-journey, .current-occupations {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.academic-journey h3, .current-occupations h3 {
+  color: #D62598;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 80%;
+  height: 5px;
+  background-color: silver;
+  margin: 0 auto 30px auto;
+}
+ /* Occupations Section */
+.occupations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.occupation-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+.occupation-card:hover {
+  transform: scale(1.05); /* Slightly increase the size */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+}
+.occupation-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.occupation-title {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+.read-more {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+

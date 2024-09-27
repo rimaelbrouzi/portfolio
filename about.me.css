@@ -1,0 +1,87 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+    background: url('img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#logo .icon, #logor .logo {
+    width: 48px;
+    height: 40px;
+}
+
+#logor .logo {
+    width: 140px;
+    height: 90px;
+}
+
+#contact a {
+    color: #0077b5;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h3 {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 225px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.bio {
+    margin-top: 40px;
+}
+
+.bio p {
+    width: 80%;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+#p1 {
+    color: whitesmoke;
+}
+
+#p2 {
+    color: whitesmoke;
+}
+
+.extra-pic {
+    width: 245px;
+    height: 330px;
+    margin: 20px auto;
+    display: block;
+}
+
+a {
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/R.JPG" type="image/jpeg">
+    <title>Schools & Occupations</title>
+    <link rel="stylesheet" href="education.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .icon, .logo {
+            height: 50px;
+            width: 50px;
+        }
+        main {
+            padding: 20px;
+        }
+        /* Education Section */
+        .education-section {
+            margin-bottom: 50px;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        .education-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .education-card {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            margin: 20px;
+            text-align: center;
+        }
+        .education-card img {
+            width: 100px;
+            height: 100px;
+        }
+        .line {
+            width: 50px;
+            height: 5px;
+            background-color: #333;
+            margin: 20px auto;
+        }
+        /* Occupations Section */
+        .occupations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .occupation-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .occupation-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .occupation-title {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+        .read-more {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        /* Modal Styling */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        .modal-content {
+            background-color: white;
+            margin: 15% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 60%;
+            border-radius: 10px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="https://www.linkedin.com/in/rimagnifique/" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn" class="icon">
+            </a>
+        </div>
+        <div id="logor">
+            <a href="index.html">
+                <img src="img/logor.JPG" alt="Logo" class="logo" style="margin-left: 120px;">
+            </a>
+        </div>
+        <div id="contact">
+            <a href="mailto:relbrouzi@usf.edu">Contact me right here :)</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="academic-journey">
+            <h3>My Academic Journey</h3>
+            <div class="line"></div>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h2 style="color: black;">2021</h2>
+                        <p style="color: black;">Graduated high school from Ecole Al Jabr in Casablanca, Morocco with a French Baccalaureate degree and a 3.6 GPA, specializing in Computer Science, Economics & Social Sciences, and Maths.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2 style="color: black;">2025</h2>
+                        <p style="color: black;">Expected graduation in May from the University of South Florida with a Bachelor's Degree in Computer Science, currently holding a GPA of 3.4.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Occupations Section -->
+        <section class="current-occupations">
+            <h3>My Current Occupations</h3>
+            <div class="line"></div>
+
+            <div class="occupations-grid">
+                <!-- Occupation 1 -->
+                <div class="occupation-card" onclick="openModal('modal1')">
+                    <img src="img/msoc.jpg" alt="USF Men's Soccer Team">
+                    <p class="occupation-title">Student Manager for USF Men's Soccer Team</p>
+                    <span class="read-more">Read More</span>
+                </div>
+                <!-- Modal 1 -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal1')">&times;</span>
+                        <img src="img/manager.jpg" style="width:600px; height:400px;">
+                        <h2>Manager for USF Men's Soccer Team</a></h2>
+                        <p>As a student manager for the USF Men's Soccer Team, I played a crucial role in ensuring the smooth operation of the team both on and off the field. My responsibilities included managing equipment, coordinating team logistics, and assisting with game-day preparations. I worked closely with the coaching staff to support their strategic and administrative needs, helping to organize practices, travel arrangements, and other essential aspects of team management. Additionally, I served as a point of contact for players, addressing their needs and ensuring they had everything required for optimal performance. My role also involved data collection and analysis to support coaching decisions and improve team strategies. Through this experience, I gained valuable skills in organization, communication, and teamwork, all of which contributed to the overall success of the team. I have been occupying this role for over 3 years now, I absolutely love it!</p>
+                        <p>You can visit my official profile by clicking <a href="https://gousfbulls.com/sports/mens-soccer/roster/staff/rima-el-brouzi/905" target="_blank">here</a> !</p>
+                    </div>
+                </div>
+
+                <!-- Occupation 2 -->
+                <div class="occupation-card" onclick="openModal('modal2')">
+                    <img src="img/CEO.PNG" alt="CEO">
+                    <p class="occupation-title">Vice President of the Collegiate Entrepreneurs' Organization (CEO)</p>
+                    <span class="read-more">Read More</span>
+                </div>
+                <!-- Modal 2 -->
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal2')">&times;</span>
+                        <img src="img/ceo.vp.jpg" style="width:500px; height:400px;">
+                        <h2>Vice President of CEO</h2>
+                        <p>As Vice President of the Collegiate Entrepreneurs’ Organization (CEO) at USF, I took on a pivotal role in reshaping the club's logistics and operations to enhance its effectiveness and impact. I spearheaded the restructuring of our internal processes, ensuring that our activities and initiatives were streamlined and efficiently managed. One of my key contributions was organizing a series of entrepreneurship events and workshops that provided valuable learning and networking opportunities for our members. These efforts led to a remarkable 45% increase in member engagement, reflecting the success of our revitalized approach. My role involved not only strategic planning and execution but also fostering a dynamic environment that encouraged active participation and growth among student entrepreneurs.</p>
+                        <P>You can visit our instagram by clicking <a href="https://www.instagram.com/ceoatusf/" target="_blank">here</a> !</P>
+                    </div>
+                </div>
+
+                <!-- Occupation 3 -->
+                <div class="occupation-card" onclick="openModal('modal3')">
+                    <img src="img/amhr.jpeg" alt="AMHR Lab" style="width:241px;height:209px;">
+                    <p class="occupation-title">Student Researcher at AMHR Lab</p>
+                    <span class="read-more">Read More</span>
+                </div>
+                
+                <!-- Modal 3 -->
+                <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal3')">&times;</span>
+                        <h2>Student Researcher at AMHR Lab</h2>
+                        <p>As a Student Researcher at the AMHR Lab, I focused on identifying cognitive traits using advanced large language models. My research centered around the Chain Free Association Task, where I explored how individuals’ next-word predictions could reveal underlying cognitive patterns and differences. I was responsible for analyzing extensive datasets, developing Python modules to fine-tune models for enhanced accuracy, and contributing to the understanding of language processing in relation to cognition. I collaborated with senior researchers, leveraged cutting-edge AI technologies, and played a pivotal role in advancing the lab’s goal of using language models to bridge the gap between AI and human cognitive research. My work directly impacted the lab's ability to make significant strides in understanding individual cognitive differences and their relationship with language prediction tasks.</p>
+                    <p>You can visit the lab's website by clicking <a href="https://sites.google.com/view/amhr" target="_blank">here</a> !</p>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <h3>Check my <a href="projects.html">projects page</a> to learn more about the rest of my preneurs !</h3>
+    </main>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modals = document.getElementsByClassName('modal');
+            for (var i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
